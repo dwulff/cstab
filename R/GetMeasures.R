@@ -1,5 +1,4 @@
 
-
 GetMeasures <- function(data,
                         k,
                         method = 'kmeans',
