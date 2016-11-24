@@ -50,10 +50,10 @@
 #
 #
 
-# require(devtools)
+#require(devtools)
 #document('~/Dropbox (2.0)/Work/Software/cstab')
 ##
-# check('~/Dropbox (2.0)/Work/Software/cstab')
+#check('~/Dropbox (2.0)/Work/Software/cstab')
 #
 # require(MASS)
 # cluster_example = rbind(mvrnorm(100,c(0,0),diag(2)),mvrnorm(100,c(6,0),diag(2)),
