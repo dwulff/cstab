@@ -84,7 +84,7 @@ cDistance <- function(data, # n x p data matrix
 
   WCD <- Sil <- MSE <- numeric()
   for(k in kseq) {
-    obj = GetMeasures(data, k, method=method, linkage=linkage, kmIter = kmIter, measures = c('wcd','sil','mse'))
+    obj = getMeasures(data, k, method=method, linkage=linkage, kmIter = kmIter, measures = c('wcd','sil','mse'))
     WCD[k] = obj$WCD
     Sil[k] = obj$Sil
     MSE[k] = obj$MSE
@@ -99,7 +99,7 @@ cDistance <- function(data, # n x p data matrix
     WCDs = numeric()
     for(j in 1:length(kseq)) {
       k = kseq[j]
-      obj = GetMeasures(data_syn, k, method=method, linkage=linkage, kmIter = kmIter, measures = c('wcd'))
+      obj = getMeasures(data_syn, k, method=method, linkage=linkage, kmIter = kmIter, measures = c('wcd'))
       WCDs[j] = obj$WCD
       }
     WCD_runs[i,] = WCDs
