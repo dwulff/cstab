@@ -1,5 +1,5 @@
 
-GetMeasures <- function(data,
+getMeasures <- function(data,
                         k,
                         method = 'kmeans',
                         linkage = 'complete',
