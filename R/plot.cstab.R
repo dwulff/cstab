@@ -14,9 +14,9 @@
 #' @export
 plot.cstab <- function(x, ...) {
   if(x$call$norm==FALSE) {
-    graphics::plot(x$instab_path,xlab='k',ylab='Instability',las=1,type='b',...)
+    graphics::plot(x$call$kseq,x$instab_path,xlab='k',ylab='Instability',las=1,type='b',...)
     }
   if(x$call$norm==TRUE) {
-    graphics::plot(x$instab_path_norm,xlab='k',ylab='Instability',las=1,type='b',...)
+    graphics::plot(x$call$kseq,x$instab_path_norm,xlab='k',ylab='Instability',las=1,type='b',...)
     }
 }
